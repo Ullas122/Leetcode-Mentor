@@ -1,0 +1,175 @@
+/* Floating Trigger Button - Professional & Minimal */
+#mentor-trigger {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #1e1e1e; /* Sleek dark grey */
+  color: #ffffff;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 999999;
+  transition: all 0.2s ease;
+}
+#mentor-trigger:hover {
+  background-color: #2b2b2b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Panel - Crisp, border-radius, soft shadow */
+#mentor-panel {
+  position: fixed;
+  bottom: 80px;
+  right: 24px;
+  width: 380px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e5e7eb;
+  z-index: 999999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+#mentor-header {
+  background: #ffffff;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 600;
+  font-size: 15px;
+  color: #111827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mentor-close {
+  cursor: pointer;
+  color: #2c2e31;
+  border: none;
+  background: none;
+  font-size: 14px;
+  padding: 4px;
+  transition: color 0.2s;
+}
+#mentor-close:hover {
+  color: #111827;
+}
+
+/* Output Area - Console/Markdown Aesthetic */
+#mentor-output {
+  padding: 20px;
+  max-height: 320px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #374151;
+  background: #f9fafb;
+}
+#mentor-output b, #mentor-output strong {
+  color: #111827;
+}
+
+/* Controls Container */
+#mentor-controls {
+  padding: 20px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Idea Validator Input Area */
+.mentor-input-group {
+  display: flex;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+/* Force white background and dark text to beat LeetCode's dark mode */
+.mentor-input-group input {
+  flex: 1;
+  padding: 10px 12px;
+  background-color: #ffffff !important; 
+  color: #111827 !important; 
+  border: 1px solid #d1d5db !important;
+  border-right: none !important;
+  border-radius: 6px 0 0 6px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+/* Make sure the placeholder text is a visible light gray */
+.mentor-input-group input::placeholder {
+  color: #505257 !important; 
+}
+
+.mentor-input-group input:focus {
+  border-color: #3b82f6 !important;
+}
+
+.mentor-input-group button {
+  background: #f3f4f6 !important;
+  color: #374151 !important;
+  border: 1px solid #d1d5db !important;
+  padding: 0 16px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.mentor-input-group button:hover {
+  background: #e5e7eb !important;
+  color: #111827 !important;
+}
+
+/* Core Buttons Grid - Side by Side */
+.mentor-button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* Primary Button (Hint) */
+.mentor-btn-primary {
+  padding: 10px;
+  background: #2563eb; /* Professional Blue */
+  color: white;
+  border: 1px solid #1d4ed8;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+.mentor-btn-primary:hover {
+  background: #1d4ed8;
+}
+
+/* Secondary Button (Review Code Logic) - Clean Outline */
+.mentor-btn-secondary {
+  padding: 10px;
+  background: #ffffff;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+.mentor-btn-secondary:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+  color: #111827;
+}
